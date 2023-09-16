@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@1&family=Nothing+You+Could+Do&family=Roboto+Condensed&family=Roboto+Flex:opsz@8..144&display=swap');
+
+:root{
+    /* color pallette (not set into stone lol) */
+    --primary-color: #9CADCE;
+    --secondary-color: #08415C;
+    --accent1-color: #D1CFE2;
+    --accent-color: #FFF7AE;
+
+    /* font choice (also not set into stone) */
+    --heading-font: 
+}
+/* need help lol*/
+header{
+    display: grid;
+    grid-column: 1/4;
+    grid-row: 1/2;
+    text-align: center;
+    background-color: var(--secondary-color);
+}
+h1{
+    color: var(--primary-color);
+}
+
+nav{
+    display: grid;
+    background-color: var(--accent-color);
+    grid-row: 2/3;
+    grid-column: 1/4;
+    text-align: center;
+    border: 3px solid #FFF385;
+}
+
+a{
+    color: var(--secondary-color);
+}
+
+li{
+    color: var(--secondary-color);
+}
+
+h2{
+    text-align: center;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    display: grid;
+    grid-row: 2/3;
+    grid-row-gap: 20px;
+    border: 2px solid lightgray;
+    border-radius: 10px;
+}
+
+h3{
+    display: grid;
+    background-color: var(--secondary-color);
+    color: var(--accent1-color);
+    text-align: center;
+}
+
+ul{
+    list-style-type: none;
+}
+
+p{
+    text-align: center;
+}
+
+footer{
+    text-align: center;
+    background-color: var(--secondary-color);
+}
+
+.white{
+    color: white;
+}
+
+main {
+    max-width: 800px; /* Set your desired maximum width */
+    width: 100%; /* Ensure it takes the full width of the container */
+    padding: 20px; /* Add padding as needed */
+    
+}
