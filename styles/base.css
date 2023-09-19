@@ -71,6 +71,7 @@ h2{
 .card{
     border: 2px solid lightgray;
     border-radius: 10px; 
+    margin-bottom: 10px;
 }
 
 h3{
