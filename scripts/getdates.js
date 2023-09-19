@@ -1,3 +1,3 @@
 let today = new Date();
-document.querySelector("#currentYear").textContent = today.getFullYear();
-document.querySelector("#lastModified").textContent = document.lastModified;
+document.querySelector("#currentYear").innerHTML = "&copy;" + today.getFullYear();
+document.querySelector("#lastModified").textContent = "Date Modified: " + document.lastModified;
