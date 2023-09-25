@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@1&family=Nothing+You+Could+Do&family=Roboto+Condensed&family=Roboto+Flex:opsz@8..144&display=swap');
+
+header{
+    background-color: #D1CFE2;
+    text-align: center;
+    padding: 1em;
+}
+main{
+    background-color: #08415c;
+    padding: 1em;
+}
+
+h1{
+    color: black;
+}
+
+h2{
+    background-color: #D1CFE2;
+    padding: 1em;
+    margin: auto 0;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.card{
+    margin: 0 auto;
+    max-width: 600px;
+    border: 2px solid lightgray;
+    border-radius: 12px; 
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+ul{
+    color: #D1CFE2;
+    list-style: none;
+}
+
+p{
+    color: whitesmoke;
+}
+
+footer{
+    background-color: #D1CFE2;
+    text-align: center;
+    padding: 1em;
+}
+
+.dark{
+    color: darkslategrey;
+}
