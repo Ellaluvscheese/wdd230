@@ -5,7 +5,7 @@
         grid-template-columns: 1fr 1fr;
         max-width: 900px;
     }
-    .wdd_h2_container {
+    #wdd_h2_container {
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
