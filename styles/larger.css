@@ -1,0 +1,24 @@
+@media screen and (min-width: 800px) {
+    main{
+        display: grid;
+        width: 100%;
+        grid-template-columns: 1fr 1fr;
+        max-width: 900px;
+    }
+    .wdd_h2_container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    h2 {
+        grid-column: span 2;
+    }
+    body { 
+        max-width: 1000;
+        margin: 0 auto;
+    }
+    header {
+        width: 100%;
+    }
+    
+  }
+  
