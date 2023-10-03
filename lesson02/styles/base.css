@@ -8,6 +8,13 @@ header{
 main{
     background-color: #08415c;
     padding: 1em;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+body{
+    max-width: 600px;
+    margin: 0 auto; 
 }
 
 h1{
@@ -21,16 +28,44 @@ h2{
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
 }
+h3{
+    background-color: #D1CFE2;
+    padding: 1em;
+    margin: auto 0;
+}
+
+.linktowebsiteused{
+    text-align: center;
+    color: black;
+}
+
+.linktowebsiteused:hover{
+    background-color: black;
+    color: #D1CFE2;
+    padding: 1em;
+}
 
 .card{
     margin: 0 auto;
     max-width: 600px;
     border: 2px solid lightgray;
     border-radius: 12px; 
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+    margin-top: 20px;
     text-align: center;
 }
 
+#apple-card{
+    grid-row: 1/2;
+}
+
+#lego-card{
+    grid-row: 3/3;
+}
+
+#nike-card{
+    grid-row: 2/3;
+}
 ul{
     color: #D1CFE2;
     list-style: none;
@@ -38,6 +73,7 @@ ul{
 
 p{
     color: whitesmoke;
+    padding: 1em;
 }
 
 footer{
