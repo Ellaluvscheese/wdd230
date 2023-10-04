@@ -114,3 +114,47 @@ main {
     grid-gap: 1rem;
 
 }
+
+#menu{
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    text-decoration: none;
+    padding: .5rem .75rem;
+    color: var(--secondary-color);
+}
+
+#menu::before{
+    content: "≡";
+}
+
+.navigation{
+    list-style: none;
+    margin: 0 auto;
+    max-width: 760px;
+}
+
+.navigation li{
+    display: none;
+}
+
+.navigation a{
+    display: block;
+    padding: 0.75rem;
+    text-align: left;
+    text-decoration: none;
+    font-size: clamp(1rem, 2vmin, 1.5rem);
+}
+
+.navigation a:hover, .navigation a:active {
+	color: white;
+	background-color: black;
+}
+
+.show li{
+    display: block;
+}
+
+#menu.show::before{
+    content: "x";
+}
