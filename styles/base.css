@@ -49,8 +49,6 @@ h1{
 nav{
     background-color: var(--accent-color);
     text-align: center;
-    border: 3px solid #FFF385;
-    padding: 10px;
 }
 
 a{
@@ -112,7 +110,6 @@ main {
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 1rem;
-
 }
 
 #menu{
@@ -122,6 +119,10 @@ main {
     text-decoration: none;
     padding: .5rem .75rem;
     color: var(--secondary-color);
+    background-color: #FFF7AE;
+    border-top: 3px solid #FFF385;
+    border-left: 3px solid #FFF385;
+    border-right: 3px solid #FFF385;
 }
 
 #menu::before{
@@ -130,8 +131,15 @@ main {
 
 .navigation{
     list-style: none;
-    margin: 0 auto;
+    margin: 0;
     max-width: 760px;
+}
+
+.nav-list{
+    margin: auto 0;
+    border-bottom: 3px solid #FFF385;
+    border-left: 3px solid #FFF385;
+    border-right: 3px solid #FFF385;
 }
 
 .navigation li{
