@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@1&family=Nothing+You+Could+Do&family=Roboto+Condensed&family=Roboto+Flex:opsz@8..144&display=swap');
 
+h1, h2, h3 {
+    font-family: "Roboto Condensed";
+}
+
+p, a, li{
+    font-family: "Roboto Flex";
+}
+
 header{
     background-color: #D1CFE2;
     text-align: center;

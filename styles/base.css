@@ -8,8 +8,18 @@
     --accent-color: #FFF7AE;
 
     /* font choice (also not set into stone) */
-    --heading-font: 
+    --heading-font: "Roboto Condensed";
+    --paragraph-font: "Roboto Flex", Helvetica, sans-serif;
 }
+
+h1, h2, h3{
+    font-family: var(--heading-font);
+}
+
+p, a{
+    font-family: var(--paragraph-font);
+}
+
 /* need help lol*/
 header{
     display: grid;
