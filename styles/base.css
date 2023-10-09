@@ -46,7 +46,7 @@ img{
 }
 
 body{
-    margin: 0 auto;
+    margin: 0;
     max-width: 600px;
 }
 
@@ -78,6 +78,9 @@ h2{
     border-radius: 10px; 
     margin-bottom: 10px;
     margin: 0 auto;
+    width: 100%;
+    max-width: 400px;
+    min-width: 100px;
 }
 
 h3{
@@ -86,6 +89,8 @@ h3{
     color: var(--accent1-color);
     text-align: center;
     padding: 10px;
+    padding-left: 0%;
+    padding-right: 0%;
     margin: 0 auto;
 }
 
@@ -115,8 +120,7 @@ footer{
 main {
     max-width: 800px; /* Set your desired maximum width */
     width: 100%; /* Ensure it takes the full width of the container */
-    padding: 20px; /* Add padding as needed */
-    margin: auto 0;
+    margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 1rem;
@@ -175,4 +179,13 @@ main {
 
 #menu.show::before{
     content: "x";
+}
+
+#map{
+    position: relative;
+    overflow: hidden;
+}
+
+#map iframe{
+    width: 100%;
 }
