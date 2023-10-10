@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@1&family=Nothing+You+Could+Do&family=Roboto+Condensed&family=Roboto+Flex:opsz@8..144&display=swap');
+
+h1, h2, h3{
+    font-family: "Roboto Condensed";
+}
+
+p, a, li{
+    font-family: "Roboto Flex";
+}
+
+body{
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #E6DBD0;
+}
+
+header{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    text-align: center;
+    background-color: #335C81;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+h1{
+    color: white;
+}
+
+header img{
+    padding: 1em;
+}
+
+ul{
+    list-style-type: none;
+}
+
+nav{
+    text-align: center;
+    background-color: #CE2767;
+}
+
+#menu{
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    text-decoration: none;
+    padding: .5rem .75rem;
+    color: white;
+    background-color: #CE2767;
+    border: #960d42 solid 2px;
+}
+
+#menu::before{
+    content: "≡";
+}
+
+.navigation{
+    list-style: none;
+    margin: 0;
+    max-width: 760px;
+}
+
+.nav-list{
+    margin: auto 0;
+}
+
+.navigation li{
+    display: none;
+}
+
+.navigation a{
+    display: block;
+    padding: 0.75rem;
+    text-align: left;
+    text-decoration: none;
+    font-size: clamp(1rem, 2vmin, 1.5rem);
+}
+
+.navigation a:hover, .navigation a:active {
+	color: white;
+	background-color: #335C81;
+}
+
+.show li{
+    display: block;
+}
+
+#menu.show::before{
+    content: "x";
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+
+nav ul{
+    display: flex;
+    flex-direction: column;
+}
+
+h2, h3{
+    text-align: center;
+    color: white;
+    background-color: #556F44;
+    padding: 1em;
+    margin: 0 auto;
+}
+
+#hero-section{
+    text-align: center;
+}
+
+#hero{
+    max-width: 600px;
+    width: 100%;
+}
+
+#current-events{
+    border-radius: 10px; 
+    margin-bottom: 10px;
+    margin: 0 auto;
+    width: 100%;
+    min-width: 100px;
+    text-align: center;
+}
+
+#weather{
+    border-radius: 10px; 
+    margin-bottom: 10px;
+    margin: 0 auto;
+    width: 100%;
+    min-width: 100px;
+    text-align: center;
+}
+
+#about{
+    border-radius: 10px; 
+    margin-bottom: 10px;
+    margin: 0 auto;
+    width: 100%;
+    min-width: 100px;
+    text-align: center;
+}
+
+#spotlight{
+    border-radius: 10px; 
+    margin-bottom: 10px;
+    margin: 0 auto;
+    width: 100%;
+    min-width: 100px;
+    text-align: center;
+}
+
+#spotlight2{
+    border-radius: 10px; 
+    margin-bottom: 10px;
+    margin: 0 auto;
+    width: 100%;
+    min-width: 100px;
+    text-align: center;
+}
+
+main {
+    max-width: 800px; 
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+}
+
+footer{
+    background-color: #335C81;
+    text-align: center;
+    padding: 1em;
+}

@@ -11,4 +11,32 @@
 }
 #almond{
     background-color: #E6DBD0;
+    border: black solid;
+}
+
+h1, h2, h3{
+    font-family: "Roboto Condensed";
+}
+
+p, a, li{
+    font-family: "Roboto Flex";
+}
+
+body{
+    max-width: 800px;
+    background-color: #E6DBD0;
+}
+#small{
+    height: fit-content;
+    max-width: 800px;
+}
+
+#medium{
+    height: fit-content;
+    max-width: 800px;
+}
+
+#large{
+    height: fit-content;
+    max-width: 800px;
 }
