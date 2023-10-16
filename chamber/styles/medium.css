@@ -57,4 +57,9 @@
     #menu{
         display: none;
     }
+
+    .switch{
+        left: 50px;
+        top: 5px;
+    }
 }
