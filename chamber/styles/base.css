@@ -22,12 +22,10 @@ header{
     display: flex;
     justify-content: center; 
     align-items: center;
+    padding: 1em;
 }
 h1{
     color: white;
-}
-
-header img{
     padding: 1em;
 }
 
@@ -101,7 +99,7 @@ nav ul{
     flex-direction: column;
 }
 
-h2, h3{
+h2{
     text-align: center;
     color: white;
     background-color: #556F44;
@@ -190,6 +188,9 @@ footer p{
 }
 
 /* images */
+#logo{
+    border: 3px solid black;
+}
 
 #weatherIcon{
     height: fit-content;

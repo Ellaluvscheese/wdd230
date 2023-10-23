@@ -1,5 +1,5 @@
 function showWindChill(temp, speed){
-    const windchillSpan = document.getElementById("windchill");
+    const windchillSpan = document.getElementById("windChill");
 
     let message = "N/A";
 
@@ -14,8 +14,8 @@ function showWindChill(temp, speed){
 }
 
 const temperatureSpan = document.getElementById("temperature");
-const windspeedSpan = document.getElementById("windspeed");
+const windSpeedSpan = document.getElementById("windSpeed");
 const temperature = parseInt(temperatureSpan.textContent);
-const windspeed = parseInt(windspeedSpan.textContent);
+const windSpeed = parseInt(windSpeedSpan.textContent);
 
-showWindChill(temperature, windspeed)
+showWindChill(temperature, windSpeed)

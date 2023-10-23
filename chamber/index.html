@@ -18,11 +18,12 @@
     <script src="scripts/dates.js" defer></script>
     <script src="scripts/burger.js" defer></script>
     <script src="scripts/darkmode.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
     <title>Hamilton Chamber of Commerce</title>
 </head>
 <body id="bodyyy">
     <header>
-        <img src="https://placehold.co/100x100" alt="logo of an H">
+        <img id="logo" src="images/hamiltonL.webp" alt="logo of an H">
         <h1>Hamilton Missouri Chamber of Commerce</h1>
         <label class="switch">
             <input type="checkbox" id="myCheck">
@@ -42,25 +43,30 @@
         <section id="hero-section">
             <h2>Hero</h2>
             <!-- https://placehold.co/1200x400 -->
-            <img id="hero" src="images/trainMural.jpg" alt="Placeholder hero image">
+            <picture>
+                <source media="(min-width: 900px)" srcset="images/wddSmileL.webp">
+                <source media="(min-width: 835px)" srcset="images/wddSmileM.webp">
+                <img id="hero" src="images/wddSmileS.webp" alt="Placeholder hero image">
+            </picture>
             <button>Call to Action</button> 
         </section>
 
         <section id="current-events">
             <h2>Current Events</h2>
-            <img id="currimg" src="images/summer2013-002.jpg" alt="Placeholder image for current events section">
+            <img id="currimg" src="images/summer.webp" alt="Picture of people enjoying a movie at the park.">
             <p>Drive in Movie - The JcPenney Park</p>
-            <p>Tuesday at 8:30pm</p>
+            <p>Tuesdays at 8:30pm</p>
             <p>Join the community at a drive in movie to see a fun movie and eat some popcorn.</p>
         </section>
 
         <section id="weather">
             <h2>Weather</h2>
-            <img id="weatherIcon" src="images/weatherIcon.png" alt="Placeholder image for the weather section">
-            <p>33°C</p>
-            <p>Cloudy</p>
-            <p>Humidity: a lot</p>
-            <p>Wind Chill: None</p>
+            <img id="weatherIcon" src="images/weatherIcon.webp" alt="Placeholder image for the weather section">
+            <h3><span id="temperature">32</span>&deg;F</h3>
+            <h3 id="weatherdesc">Clear</h3>
+            <hr>
+            <h3>Wind Speed: <span id="windSpeed">10</span> </h3>
+            <h3>Wind Chill: <span id="windChill">?</span>&deg;F </h3>
         </section>
 
         <section id="about">
@@ -69,8 +75,8 @@
         </section>
 
         <section id="spotlight">
-            <h3>Pasta Villa</h3>
-            <img id="pvimg" src="images/pv.jpg" alt="PLaceholder">
+            <h2>Pasta Villa</h2>
+            <img id="pvimg" src="images/pv.webp" alt="PLaceholder">
             <p>Yummy pasta!</p>
             <P>email@email.com</P>
             <p>111 111 1111</p>
@@ -78,8 +84,8 @@
         </section>
 
         <section id="spotlight2">
-            <h3>Spotlight 2</h3>
-            <img id="libraryimg" src="images/libraryH.jpg" alt="PLaceholder">
+            <h2>Spotlight 2</h2>
+            <img id="libraryimg" src="images/libraryH.webp" alt="PLaceholder">
             <p>Hamilton public library</p>
             <p>Get books</p>
             <p>website</p>
