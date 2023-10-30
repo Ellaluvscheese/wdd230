@@ -3,10 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Ella Galbraith">
+    <meta name="description" content="Ella Galbraith's course assignment in making my own chamber of Commerce">
+    <meta property="og:url"                content="https://ellaluvscheese.github.io/wdd230/" />
+    <meta property="og:type"               content="website" />
+    <meta property="og:title"              content="Ella Galbraith Homepage" />
+    <meta property="og:description"        content="Ella Galbraith's course assignment portal for the class WDD 230 - Web frontend Development." />
+    <meta property="og:image"              content="https://ellaluvscheese.github.io/wdd230/images/ella-galbraith-small.jpg" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
     <title>Discover</title>
     <script src="scripts/discover.js" defer></script>
+    <script src="scripts/darkmode.js" defer></script>
+
 </head>
 <body>
-    
+    <header>
+        <img class="logo" src="images/hamiltonL.webp" alt="logo of an H">
+        <h1>Hamilton Missouri Chamber of Commerce</h1>
+        <label class="switch">
+            <input type="checkbox" id="myCheck">
+            <span class="slider round"></span>
+        </label>
+    </header>
+    <a id="menu" href="#"></a>
+    <nav class="navigation">
+        <ul class="nav-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="discover.html">Discover</a></li>
+            <li><a href="#">Directory</a></li>
+            <li><a href="#">Join Us</a> </li>
+        </ul> 
+    </nav>
+    <main class="gap discoverMain">
+        <div id="side">
+            <section id="message" class="card">
+                <h3>Welcome! Let us know if you have any questions.</h3>
+            </section> 
+            <section class="card" id="demographics">
+                <h2>Demographics</h2>
+                <p>Households: 633</p>
+                <p>Population(2023): 1,699</p>
+                <p>Median Income: $31,734</p>
+            </section> 
+        </div>
+        <div id="discoverPics-holder">
+            <img class="discoverPics" src="https://placekitten.com/400/800" alt="photo placeholder" loading="lazy">
+            <p>A cute cat</p>
+            <img class="discoverPics" src="https://placekitten.com/500/700" alt="photo placeholder" loading="lazy">
+            <p>A cute cat</p>
+            <img class="discoverPics" src="https://placekitten.com/500/800" alt="photo placeholder" loading="lazy">
+            <p>A cute cat</p>
+            <img class="discoverPics" src="https://placekitten.com/600/800" alt="photo placeholder" loading="lazy">
+            <p>A cute cat</p> 
+        </div>
+        
+    </main>
+    <footer>
+        <img class="logo" src="images/hamiltonL.webp" alt="">
+        <p>Hamilton Missouri Chamber of Commerce</p>
+        <a href="chamberlink"></a>
+        <p>333-333-3333</p>
+        <p id="currentYear"></p>
+        <p>Ella Galbraith</p>
+        <p>Chamber Project WDD 230</p>
+        <p id="lastModified"></p>
+    </footer>
 </body>
 </html>

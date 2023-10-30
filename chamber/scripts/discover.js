@@ -8,13 +8,19 @@ function getDiscoverMessage() {
     if (lastVisitValue != null) {
         lastVisit = parseInt(lastVisitValue);
         daysSinceLastVisit = Math.floor((today - lastVisit) / DAY_IN_MILIS)
-        if (daysSinceLastVisit == 1) {
+        if (daysSinceLastVisit == 0) {
+            message = "Back so soon! Awesome! "
+        }else {
+            if (daysSinceLastVisit == 1) {
             message = "You last visited 1 day ago. "
         }
         else {
             message = `You last visited ${daysSinceLastVisit} days ago.`
-        }
+        }  
+        } 
     }
     localStorage.setItem(LAST_VISIT_DATE_KEY, `${today.getTime()}`)
     return message;
 }
+
+document.querySelector("#message h3").textContent = getDiscoverMessage();
