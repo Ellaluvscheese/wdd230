@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Ella Galbraith">
+    <meta name="description" content="Ella Galbraith's course assignment portal for the class WDD 230 - Web frontend Development.">
+    <meta property="og:url"                content="https://ellaluvscheese.github.io/wdd230/" />
+    <meta property="og:type"               content="website" />
+    <meta property="og:title"              content="Ella Galbraith Homepage" />
+    <meta property="og:description"        content="Ella Galbraith's course assignment portal for the class WDD 230 - Web frontend Development." />
+    <meta property="og:image"              content="https://ellaluvscheese.github.io/wdd230/images/ella-galbraith-small.jpg" />
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/form.css">
+    <title>Ella Galbraith - WDD 230 - Web Frontend Development</title>
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/hamburger.js" defer></script>
+    <script src="scripts/site-visits.js" defer></script>
+    <script src="scripts/form.js"></script>
+</head>
+<body>
+    <header>
+        <img class="pic" src="images/ella-galbraith-small.jpg" alt="A black and white picture of Ella Galbraith smiling">
+        <h1>Ella Galbraith</h1>
+    </header>
+    <a id="menu" href="#"></a>
+    <nav class="navigation">
+        <ul class="nav-list">
+            <li class="link_stack"><a href="index.html">Home</a></li>
+            <li class="link_stack"><a href="chamber/siteplan.html">Site Plan</a></li>
+            <li class="link_stack"><a href="chamber/index.html">Chamber</a></li>
+            <li class="link_stack"><a href="https://www.byui.edu/">BYU-Idaho</a></li>
+            <li class="link_stack"><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=eng&id=p7#p7">Scripture</a></li>
+        </ul>
+    </nav>
+    <main id="form-main">
+        <form>
+            <p><span id="message"></span></p>
+            <fieldset>
+                <label>Username: <input type="text" id="username" name="username" required></label>
+                <label>Password: <input type="password" id="password" name="password" required pattern="{\d|\w}{8,}"></label>
+                <label>Confirm password: <input type="password" id="confirm" name="confirm" required></label>
+                <label>Email: <input type="email" id="email" name="email" required pattern="[\w\._%+-]+@byui\.edu$" title="Please enter a valid email address" placeholder="Email"></label>
+                <label>Page Rating: <span id="currentrating"></span> <input type="range" id="rating" name="rating" min="1" max="10" step="1" value="1" list="slidervalues"> </label>
+                <datalist id="slidervalues">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </datalist>
+                <button type="submit">JOIN US</button>
+            </fieldset>
+        </form>
+    </main>
+    <footer>
+        <p class="white" id="currentYear"></p>
+        <p class="white">Ella Galbraith</p>
+        <p class="white">Missouri</p>
+        <p class="white" id="lastModified"> </p>
+    </footer>
+</body>
+</html>
