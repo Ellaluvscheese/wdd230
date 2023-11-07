@@ -63,4 +63,76 @@
     .discoverPics:hover{
         box-shadow: 0 0 50px #333;
     }
+
+    .gap.formgrid{
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: 1fr;
+        margin: 0 auto;
+    }
+
+    #theform{
+        grid-column: 1/2;
+        border-right: 5px solid black;
+    }
+
+    fieldset{
+        border: none;
+        padding: 2em;
+    }
+
+    #membershipLevels{
+        grid-column: 2/3;
+    }
+
+    #centermemberships h1{
+        background-color: black;
+    }
+
+    #centermemberships{
+        text-align: center;
+    }
+
+    #theform h1{
+        background-color: black;
+        text-align: center;
+        margin: 1em;
+    }
+
+    input{
+        display: block;
+        padding: .5rem;
+        font-size: 1.1rem;
+        width: 50%;
+    }
+    
+    input[type="radio"]{
+        width: auto;
+    }
+
+    input[type="submit"]{
+        background-color: #556F44;
+        color: white;
+        border: none;
+    }
+
+    label{
+        display: block;
+        margin: .5rem 0;
+    }
+
+    input:invalid{
+        box-shadow: 3px 3px 3px red;
+    }
+
+    #radioslay {
+        display: flex;
+        flex-direction: column;
+      }
+      
+    .plz {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+      }
+      
 }

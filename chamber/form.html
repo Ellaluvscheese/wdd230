@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Ella Galbraith">
+    <meta name="description" content="Ella Galbraith's course assignment in making my own chamber of Commerce">
+    <meta property="og:url"                content="https://ellaluvscheese.github.io/wdd230/" />
+    <meta property="og:type"               content="website" />
+    <meta property="og:title"              content="Ella Galbraith Homepage" />
+    <meta property="og:description"        content="Ella Galbraith's course assignment portal for the class WDD 230 - Web frontend Development." />
+    <meta property="og:image"              content="https://ellaluvscheese.github.io/wdd230/images/ella-galbraith-small.jpg" />
+    <link rel="icon" href="faviconh.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script src="scripts/dates.js" defer></script>
+    <script src="scripts/burger.js" defer></script>
+    <script src="scripts/darkmode.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
+    <title>Hamilton Chamber of Commerce</title>
+</head>
+<body id="bodyyy">
+    <header>
+        <img class="logo" src="images/hamiltonL.webp" alt="logo of an H">
+        <h1>Hamilton Missouri Chamber of Commerce</h1>
+        <label class="switch">
+            <input type="checkbox" id="myCheck">
+            <span class="slider round"></span>
+        </label>
+    </header>
+    <a id="menu" href="#"></a>
+    <nav class="navigation">
+        <ul class="nav-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="discover.html">Discover</a></li>
+            <li><a href="#">Directory</a></li>
+            <li><a href="#">Join Us</a> </li>
+        </ul>  
+    </nav>
+    <main class="gap formgrid">
+        <form id="theform">
+            <h1>Become a Member</h1>
+            <fieldset>
+                <label>First Name: <input type="text" id="firstname" name="firstname" required></label>
+                <label>Last Name: <input type="text" id="lastname" name="lastname" required></label>
+                <label>Title/Position: <input type="text" id="position" name="position"></label>
+                <label>Email: <input placeholder="youremail@gmail.com" type="email" id="email" name="email" required pattern="[\w\._%+-]+@byui\.edu$" title="Please enter a valid email address" placeholder="Email"></label>
+                <label>Phone Number: <input type="telephone" id="phone" name="phone" required></label>
+                <div id="radioslay">
+                    <label>Membership:  </label>
+                    <label class="plz" for="vehicle1"> 
+                        <input type="radio" id="goldM" name="gold" value="gold"> Gold
+                    </label>
+                    <label class="plz" for="vehicle2">
+                        <input type="radio" id="silverM" name="silver" value="silver"> Silver
+                    </label>
+                    <label class="plz" for="vehicle3">
+                    <input type="radio" id="bronzeM" name="bronze" value="bronze"> Bronze
+                    </label>
+                    <label class="plz" for="nonprofit">
+                    <input type="radio" id="nonprofit" name="nonprofit" value="nonprofit"> Non Profit
+                    </label>
+                </div>
+                <label for="description">Description:</label>
+                <textarea placeholder="Tell us about your business/organization here!" name="description" id="description" cols="90" rows="10"></textarea>
+                <input type="submit" value="Click To Join Us">
+            </fieldset>
+        </form>
+        <section id="membershipLevels">
+            <section id="centermemberships">
+                <h1>Memberships:</h1>
+            </section>
+            <section id="gold" class="card">
+                <h2>Gold</h2>
+                <p>$10</p>
+            </section>
+            <section id="silver" class="card">
+                <h2>Silver</h2>
+                <p>$5</p>
+            </section>
+            <section id="bronze" class="card">
+                <h2>Bronze</h2>
+                <p>$2</p>
+            </section>
+            <section id="NP" class="card">
+                <h2>Non Profit</h2>
+                <p>Free</p>
+            </section>
+        </section>
+    </main>
+    <footer>
+        <img class="logo" src="images/hamiltonL.webp" alt="">
+        <p>Hamilton Missouri Chamber of Commerce</p>
+        <a href="chamberlink"></a>
+        <p>333-333-3333</p>
+        <p id="currentYear"></p>
+        <p>Ella Galbraith</p>
+        <p>Chamber Project WDD 230</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
