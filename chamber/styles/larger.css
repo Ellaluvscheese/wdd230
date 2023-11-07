@@ -109,10 +109,11 @@
         width: auto;
     }
 
-    input[type="submit"]{
+    button{
         background-color: #556F44;
         color: white;
         border: none;
+        padding: 1em;
     }
 
     label{
