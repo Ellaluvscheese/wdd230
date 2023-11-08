@@ -1,0 +1,46 @@
+{
+    "newMembers" : [{
+        "name" : "Galbraith",
+        "moveInDate" : "2021/09/13",
+        "familySize" : 7,
+        "visited" : false,
+        "members" : [
+            {
+                "name" : "Seth",
+                "gender" : "M",
+                "birthDate" : "1980/01/01"
+            },
+            {
+                "name" : "Sara",
+                "gender" : "F",
+                "birthDate" : "1980/01/01"
+            },
+            {
+                "name" : "Annie",
+                "gender" : "F",
+                "birthDate" : "1980/01/01"
+            },
+            {
+                "name" : "Jared",
+                "gender" : "M",
+                "birthDate" : "1980/01/01"
+            },
+            {
+                "name" : "Katie",
+                "gender" : "F",
+                "birthDate" : "1980/01/01"
+            },
+            {
+                "name" : "Ella",
+                "gender" : "F",
+                "birthDate" : "1980/01/01"
+            },
+            {
+                "name" : "Jason",
+                "gender" : "M",
+                "birthDate" : "1980/01/01"
+            }
+        ]
+    }
+    ]
+}
