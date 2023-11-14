@@ -342,7 +342,7 @@ footer p{
     grid-template-rows: 1fr;
   }
 
-  #cards{
+  #cards_grid{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     }

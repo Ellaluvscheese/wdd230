@@ -6,7 +6,7 @@
 //            "membershipLevel" : "gold"
 
 const url = './data/members.json';
-const cards = document.getElementById('cards');
+const cards = document.getElementById('cards_grid');
 
 function displayMembers(members){
     members.forEach(member => {
