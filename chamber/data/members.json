@@ -1,59 +1,67 @@
 {
     "members" : [
         {
-            "name": "Sarah",
-            "address" : "123 Main Street, Rexburg Idaho",
+            "name": "Sarah Galbraith",
+            "address" : "123 Main Street, Hamilton Missouri",
             "phone" : "111-111-1111",
-            "websiteURL" : "https://www.rexburg.org",
-            "imgeURL" : "images/example.jpg",
+            "websiteURL" : "https://www.missouriquiltco.com/",
+            "imgeURL" : "images/sarah.webp",
             "membershipLevel" : "gold"
         },
         {
-            "name": "Sarah",
-            "address" : "123 Main Street, Rexburg Idaho",
+            "name": "Alan Doan",
+            "address" : "123 Main Street, Hamilton Missouri",
             "phone" : "111-111-1111",
             "websiteURL" : "https://www.rexburg.org",
-            "imgeURL" : "images/example.jpg",
+            "imgeURL" : "images/alanD.webp",
             "membershipLevel" : "gold"
         },
         {
-            "name": "Sarah",
-            "address" : "123 Main Street, Rexburg Idaho",
+            "name": "Natalie Earnheart",
+            "address" : "123 Main Street, Hamilton Missouri",
             "phone" : "111-111-1111",
             "websiteURL" : "https://www.rexburg.org",
-            "imgeURL" : "images/example.jpg",
+            "imgeURL" : "images/natalie.webp",
             "membershipLevel" : "gold"
         },
         {
-            "name": "Sarah",
-            "address" : "123 Main Street, Rexburg Idaho",
+            "name": "Misty Doan",
+            "address" : "123 Main Street, Hamilton Missouri",
             "phone" : "111-111-1111",
             "websiteURL" : "https://www.rexburg.org",
-            "imgeURL" : "images/example.jpg",
+            "imgeURL" : "images/misty.webp",
             "membershipLevel" : "gold"
         },
         {
-            "name": "Sarah",
-            "address" : "123 Main Street, Rexburg Idaho",
+            "name": "Jake Doan",
+            "address" : "123 Main Street, Hamilton Missouri",
             "phone" : "111-111-1111",
             "websiteURL" : "https://www.rexburg.org",
-            "imgeURL" : "images/example.jpg",
+            "imgeURL" : "images/jake.webp",
             "membershipLevel" : "gold"
         },
         {
-            "name": "Sarah",
-            "address" : "123 Main Street, Rexburg Idaho",
+            "name": "Jenny Doan",
+            "address" : "123 Main Street, Hamilton Missouri",
             "phone" : "111-111-1111",
             "websiteURL" : "https://www.rexburg.org",
-            "imgeURL" : "images/example.jpg",
+            "imgeURL" : "images/jenny.webp",
             "membershipLevel" : "gold"
         },
         {
-            "name": "Sarah",
-            "address" : "123 Main Street, Rexburg Idaho",
+            "name": "Seth Galbraith",
+            "address" : "123 Main Street, Hamilton Missouri",
             "phone" : "111-111-1111",
             "websiteURL" : "https://www.rexburg.org",
-            "imgeURL" : "images/example.jpg",
+            "imgeURL" : "images/seth.webp",
+            "membershipLevel" : "gold"
+        },
+        {
+            "name": "Ron Doan",
+            "address" : "123 Main Street, Hamilton Missouri",
+            "phone" : "111-111-1111",
+            "websiteURL" : "https://www.rexburg.org",
+            "imgeURL" : "images/ron.webp",
             "membershipLevel" : "gold"
         }
     ]

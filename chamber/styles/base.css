@@ -334,3 +334,26 @@ footer p{
   .slider.round:before {
     border-radius: 50%;
   }
+
+  /* directory page */
+  .gap.directory_gap{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+
+  #cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    }
+
+    .card.directory_card{
+        border: 2px black solid;
+        text-align: center;
+        background-color: #d25e8a;
+        margin: 1em;
+    }
+
+    .card.directory_card img{
+        width: 200px;
+    }

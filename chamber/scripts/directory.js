@@ -11,12 +11,12 @@ const cards = document.getElementById('cards');
 function displayMembers(members){
     members.forEach(member => {
         let section = document.createElement("section");
-        section.classList.add('card');
+        section.classList.add('card', 'directory_card');
         let sectionHTML = `
             <h2>${member.name}</h2>
             <p>Phone: ${member.phone}</p>
             <p>Website: ${member.websiteURL}</p>
-            <img src="${member.imageURL}" alt="Picture of ${member.name}">
+            <img src="${member.imgeURL}" alt="Picture of ${member.name}">
             <p>Membership Level: ${member.membershipLevel}</P>
         `
         section.innerHTML = sectionHTML;
