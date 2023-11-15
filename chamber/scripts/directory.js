@@ -14,8 +14,9 @@ function displayMembers(members){
         section.classList.add('card', 'directory_card');
         let sectionHTML = `
             <img src="${member.imgeURL}" alt="Picture of ${member.name}">
-            <h2>${member.name}</h2>
-            <p>Phone: ${member.phone}</p>
+            <h2 class="lineUnder" >${member.name}</h2>
+            <p class="space">${member.address}</P>
+            <p>${member.phone}</p>
             <p><a href="${member.websiteURL}" id="directoryButton" target="_blank">Website: </a></p>
             
         `

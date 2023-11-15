@@ -396,10 +396,23 @@ footer p{
         background-color: #d25e8a;
         margin: 1em;
     }
+/* 
+    .card.directory_card{
+        max-width: 250px;
+    } */
 
     .card.directory_card img{
         width: 200px;
-        border: solid black 2px;
+        border: 2px solid black;
+    }
+
+    .lineUnder{
+        border: 5px solid black;
+        padding: .25em;
+    }
+
+    .space{
+        padding: .25em;
     }
 
     /* list view */

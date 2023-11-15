@@ -1,67 +1,67 @@
 {
     "members" : [
         {
-            "name": "Sarah Galbraith",
-            "address" : "123 Main Street, Hamilton Missouri",
-            "phone" : "111-111-1111",
+            "name": "Missouri Star Quilt Co.",
+            "address" : "1005 S Hughes St, Hamilton, MO 64644",
+            "phone" : "(888) 571-1122",
             "websiteURL" : "https://www.missouriquiltco.com/",
-            "imgeURL" : "images/sarah.webp",
+            "imgeURL" : "images/MSQCLogo.jpg",
             "membershipLevel" : "gold"
         },
         {
-            "name": "Alan Doan",
-            "address" : "123 Main Street, Hamilton Missouri",
-            "phone" : "111-111-1111",
-            "websiteURL" : "https://www.rexburg.org",
-            "imgeURL" : "images/alanD.webp",
+            "name": "Pasta Villa",
+            "address" : "100 N Davis Street Hamilton, MO 64644",
+            "phone" : "(816) 583-2116",
+            "websiteURL" : "https://www.toasttab.com/local/order/pasta-villa-100-n-davis-street/r-7265eb9a-5cff-4748-b901-c1af2b3233f0",
+            "imgeURL" : "images/pv.webp",
             "membershipLevel" : "gold"
         },
         {
-            "name": "Natalie Earnheart",
-            "address" : "123 Main Street, Hamilton Missouri",
-            "phone" : "111-111-1111",
-            "websiteURL" : "https://www.rexburg.org",
-            "imgeURL" : "images/natalie.webp",
+            "name": "Hamilton Public Library",
+            "address" : "312 N Davis Street, Hamilton, MO 64644",
+            "phone" : "(816) 583-4832",
+            "websiteURL" : "https://www.hamiltonpubliclibrary.com/",
+            "imgeURL" : "images/libraryH.webp",
             "membershipLevel" : "gold"
         },
         {
-            "name": "Misty Doan",
-            "address" : "123 Main Street, Hamilton Missouri",
-            "phone" : "111-111-1111",
-            "websiteURL" : "https://www.rexburg.org",
-            "imgeURL" : "images/misty.webp",
+            "name": "Blue Diamond Jewelers",
+            "address" : "103 S Davis Suite A Hamilton, MO 64644",
+            "phone" : "(816) 583-2057",
+            "websiteURL" : "https://quiltersbling.com/",
+            "imgeURL" : "images/blueDiamondd.png",
             "membershipLevel" : "gold"
         },
         {
-            "name": "Jake Doan",
-            "address" : "123 Main Street, Hamilton Missouri",
-            "phone" : "111-111-1111",
-            "websiteURL" : "https://www.rexburg.org",
-            "imgeURL" : "images/jake.webp",
+            "name": "Bram Funeral Home",
+            "address" : "208 E School St. Hamilton, MO 64644",
+            "phone" : "(816) 583-4423",
+            "websiteURL" : "https://www.bramfuneralservices.com/",
+            "imgeURL" : "images/funeral.png",
+            "membershipLevel" : "silver"
+        },
+        {
+            "name": "Hamilton Bank",
+            "address" : "111 N. Davis PO Box 127, Hamilton, MO 64644",
+            "phone" : "(816) 583-2143",
+            "websiteURL" : "https://hamiltonbank.net/",
+            "imgeURL" : "images/Hbank.webp",
             "membershipLevel" : "gold"
         },
         {
-            "name": "Jenny Doan",
-            "address" : "123 Main Street, Hamilton Missouri",
-            "phone" : "111-111-1111",
-            "websiteURL" : "https://www.rexburg.org",
-            "imgeURL" : "images/jenny.webp",
-            "membershipLevel" : "gold"
+            "name": "Mrs. Littles Tea & Toys",
+            "address" : "106 N Davis St. Hamilton, Missouri 64644",
+            "phone" : "(816) 583-2277",
+            "websiteURL" : "https://mrs-littles-tea-toys.square.site/",
+            "imgeURL" : "images/missLittle.webp",
+            "membershipLevel" : "bronze"
         },
         {
-            "name": "Seth Galbraith",
-            "address" : "123 Main Street, Hamilton Missouri",
-            "phone" : "111-111-1111",
-            "websiteURL" : "https://www.rexburg.org",
-            "imgeURL" : "images/seth.webp",
-            "membershipLevel" : "gold"
-        },
-        {
-            "name": "Ron Doan",
-            "address" : "123 Main Street, Hamilton Missouri",
-            "phone" : "111-111-1111",
-            "websiteURL" : "https://www.rexburg.org",
-            "imgeURL" : "images/ron.webp",
+            "name": "Innate Way Family Chiropractic",
+            "address" : "500 S Davis St Suite B, Hamilton, MO 64644",
+            "phone" : "816-583-2220",
+            "websiteURL" : "https://www.innateway.com/",
+            "imgeURL" : "images/innateWay.jpg",
             "membershipLevel" : "gold"
         }
     ]
