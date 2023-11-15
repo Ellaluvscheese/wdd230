@@ -6,18 +6,18 @@
 //            "membershipLevel" : "gold"
 
 const url = './data/members.json';
-const cards = document.getElementById('cards_grid');
+const cards = document.getElementById('gridOrList');
 
 function displayMembers(members){
     members.forEach(member => {
         let section = document.createElement("section");
         section.classList.add('card', 'directory_card');
         let sectionHTML = `
+            <img src="${member.imgeURL}" alt="Picture of ${member.name}">
             <h2>${member.name}</h2>
             <p>Phone: ${member.phone}</p>
-            <p>Website: ${member.websiteURL}</p>
-            <img src="${member.imgeURL}" alt="Picture of ${member.name}">
-            <p>Membership Level: ${member.membershipLevel}</P>
+            <p><a href="${member.websiteURL}" id="directoryButton" target="_blank">Website: </a></p>
+            
         `
         section.innerHTML = sectionHTML;
         cards.appendChild(section);
@@ -36,5 +36,27 @@ async function getMemberData() {
         console.error("NO WORK")
     }
 };
+
+var layoutGrid = document.getElementById('grid_button');
+var layoutList = document.getElementById('list_button');
+var directoryView = document.getElementById('gridOrList');
+
+layoutGrid.addEventListener('click', () => {
+    if (!layoutGrid.classList.contains('view')){
+        layoutGrid.classList.add('view');
+        layoutList.classList.remove('view');
+        directoryView.classList.add('gridVersion');
+        directoryView.classList.remove('listVersion');
+    }
+});
+
+layoutList.addEventListener('click', () => {
+    if (!layoutList.classList.contains('view')){
+        layoutList.classList.add('view');
+        layoutGrid.classList.remove('view');
+        directoryView.classList.add('listVersion');
+        directoryView.classList.remove('gridVersion');
+    }
+});
 
 getMemberData();

@@ -109,7 +109,7 @@
         width: auto;
     }
 
-    button{
+    #formButton{
         background-color: #556F44;
         color: white;
         border: none;

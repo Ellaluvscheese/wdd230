@@ -336,24 +336,80 @@ footer p{
   }
 
   /* directory page */
-  .gap.directory_gap{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
+  #directoryButton{
+    border-radius: 10px;
+    border: 2px black solid;
+    padding: .5em;
+    background-color: #556F44;
   }
 
-  #cards_grid{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  .gridListButtons{
+    border-radius: 10px;
+    border: 2px black solid;
+    width: 100px;
+    background-color: #556F44;
+    color: white;
+    padding: .5em;
+    margin: 10px;
+  }
+
+  .gridListButtons.view{
+    border: #d25e8a 4px solid;
+  }
+  
+    .gap.directory_gap{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        text-align: center;
+        
     }
 
-    .card.directory_card{
-        border: 2px black solid;
+/* card / grid view */
+
+    .gridVersion{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        justify-items: center;
+    }
+
+    .gridVersion section{
         text-align: center;
+        border: 4px black solid;
+        padding: 1em;
         background-color: #d25e8a;
         margin: 1em;
     }
 
     .card.directory_card img{
         width: 200px;
+        border: solid black 2px;
+    }
+
+    /* list view */
+
+    .listVersion{
+        display: grid;
+        padding: 1em;
+    }
+
+    .listVersion img{
+        display: none;
+    }
+
+    .listVersion section{
+        display: grid;
+        border: none;
+        grid-template-columns: repeat(4, 1fr);
+        width: 80%;
+        padding: .5em;
+        margin: 0 auto;
+    }
+
+    .listVersion section:nth-child(odd){
+        background-color: #d25e8a;
+    }
+
+    .listVersion section:nth-child(even){
+        background-color: #E6DBD0;
     }
