@@ -62,4 +62,8 @@
         left: 50px;
         top: 5px;
     }
+
+    .gap.discoverMain{
+        display: block;
+    }
 }

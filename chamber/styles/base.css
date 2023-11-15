@@ -230,8 +230,24 @@ nav ul{
     margin: 10px;
 }
 
-#discoverPics{
-    border: 5px solid #556F44;
+#side{
+    text-align: center;
+}
+
+#discH1{
+    color: black;
+}
+
+.card.cardDisc{
+    border: 3.5px solid black;
+    box-shadow: 0 0 50px #333;
+}
+
+#discoverPics-holder img{
+    display: block;
+    border: 5px solid black;
+    max-width: 500px;
+    margin: 10px auto;
 }
 
 footer{
