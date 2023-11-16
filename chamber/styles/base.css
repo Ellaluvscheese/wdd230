@@ -120,13 +120,15 @@ nav ul{
 
 #current-events{
     border-radius: 10px; 
-    margin-bottom: 10px;
-    margin: 0 auto;
+    border-top-right-radius: 0%;
+    border-top-left-radius: 0%;
+    border: 2px solid black;
     width: 100%;
     min-width: 100px;
     text-align: center;
     max-width: 400px;
     min-width: 100px;
+    margin: 0 auto;
 }
 #current-events h2{
     text-align: center;
@@ -138,14 +140,16 @@ nav ul{
 }
 
 #weather{
-    border-radius: 10px; 
-    margin-bottom: 10px;
-    margin: 0 auto;
+    border-radius: 10px;
+    border-top-right-radius: 0%;
+    border-top-left-radius: 0%;
+    border: 2px solid black;
     width: 100%;
     min-width: 100px;
     text-align: center; 
     max-width: 400px;
-    min-width: 100px;
+    min-width: 165px;
+    margin: 0 auto;
 }
 
 #weather h2{
@@ -158,12 +162,17 @@ nav ul{
 }
 
 #about{
-    border-radius: 10px; 
+    border-radius: 10px;
+    border-top-right-radius: 0%;
+    border-top-left-radius: 0%;
+    border: 2px solid black;
     margin-bottom: 10px;
     margin: 0 auto;
     width: 100%;
+    max-width: 400px;
     min-width: 100px;
     text-align: center;
+    padding-bottom: 1em;
 }
 
 #about h2{
@@ -176,8 +185,10 @@ nav ul{
 }
 
 #spotlight{
-    border-radius: 10px; 
-    margin-bottom: 10px;
+    border-radius: 10px;
+    border-top-right-radius: 0%;
+    border-top-left-radius: 0%;
+    border: 2px solid black;
     margin: 0 auto;
     width: 100%;
     text-align: center;
@@ -187,8 +198,10 @@ nav ul{
 
 #spotlight2{
     border-radius: 10px; 
-    margin-bottom: 10px;
     margin: 0 auto;
+    border-top-right-radius: 0%;
+    border-top-left-radius: 0%;
+    border: 2px solid black;
     width: 100%;
     max-width: 300px;
     min-width: 100px;
@@ -202,6 +215,10 @@ nav ul{
     padding: 1em;
     margin: 0 auto;
     border: 2px solid black;
+}
+
+.spotlight-cards{
+    text-align: center;
 }
 
 .gap {
@@ -282,7 +299,13 @@ footer p{
 
 #libraryimg{
     height: fit-content;
-    max-width: 100%;
+    width: 100%;
+    max-width: 400px;
+}
+
+#hammyMapImg{
+    width: 100%;
+    max-width: 400px;
 }
 
 
