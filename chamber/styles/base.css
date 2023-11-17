@@ -465,3 +465,7 @@ footer p{
     .listVersion section:nth-child(even){
         background-color: #E6DBD0;
     }
+
+    #meetAndGreet{
+        display: none;
+    }

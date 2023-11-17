@@ -1,3 +1,10 @@
+const LAT = '39';
+const LON = '-94';
+const APIKEY = "5076daa46c48d89cb2affd9c767ec196";
+
+const APIURL2 = `https://api.openweathermap.org/data/2.5/forecast?lat=${LAT}&lon=&${LON}&appid=${APIKEY}`
+
+
 function showWindChill(temp, speed){
     const windchillSpan = document.getElementById("windChill");
 
