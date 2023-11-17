@@ -35,7 +35,8 @@ ul{
 
 nav{
     text-align: center;
-    background-color: black;
+    background-color: #CE2767;
+    border: #960d42 solid 5px;
 }
 
 #menu{
@@ -75,9 +76,9 @@ nav{
     font-size: clamp(1rem, 2vmin, 1.5rem);
 }
 
-.navigation a:hover, .navigation a:active {
+.navigation a:hover{
 	color: white;
-	background-color: #335C81;
+	background-color: #556F44;
 }
 
 .show li{

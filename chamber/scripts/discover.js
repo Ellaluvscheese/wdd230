@@ -23,4 +23,4 @@ function getDiscoverMessage() {
     return message;
 }
 
-document.querySelector("#message h3").textContent = getDiscoverMessage();
+document.querySelector("#message h2").textContent = getDiscoverMessage();
