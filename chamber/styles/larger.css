@@ -89,5 +89,23 @@
         grid-column: 2/3;
     }
     
+    .xPosition{
+        font-weight: bold;
+        position: absolute;
+        top: .2%;
+        left: 67%;
+    }
+
+    #overLapButton{
+        position: absolute;
+        right: 3%;
+        top: 40%;
+        transform: translate(-50%, -50%);
+    }
+
+    .gap.thankYou{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
       
 }

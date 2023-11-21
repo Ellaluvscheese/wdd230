@@ -97,4 +97,17 @@
     #membershipLevels{
         grid-column: 2/3;
     }
+
+    .xPosition{
+        position: absolute;
+        top: 35%;
+        left: 68%;
+    }
+
+    #overLapButton{
+        position: absolute;
+        right: 0%;
+        top: 40%;
+        transform: translate(-50%, -50%);
+    }
 }

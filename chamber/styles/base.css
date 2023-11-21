@@ -110,10 +110,12 @@ nav ul{
 #hero{
     max-width: 600px;
     width: 100%;
+    display: block;
 }
 
 #hero-section{
     text-align: center;
+    position: relative;
 }
 
 #hero-section h2{
@@ -421,6 +423,13 @@ footer p{
         
     }
 
+    #overLapButton{
+        position: absolute;
+        right: 0%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
 /* card / grid view */
 
     .gridVersion{
@@ -493,7 +502,21 @@ footer p{
 
     #meetAndGreet{
         display: none;
+        border: var(--black) solid 5px;
+        margin: 0 auto;
+        color: white;
+        padding: 3em;
+        max-width: 30%;
+        background-color: #960d42;
     }
+
+    .xPosition{
+        font-weight: bold;
+        position: absolute;
+        top: 36.5%;
+        left: 66.5%;
+    }
+
 
     fieldset{
         border: none;
@@ -562,4 +585,8 @@ footer p{
 
     #silver, #bronze, #NP, h3{
         color: var(--black);
+    }
+
+    .thankYou{
+        text-align: center;
     }
