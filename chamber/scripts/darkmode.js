@@ -16,7 +16,11 @@ function darkMode() {
     const discPic = document.querySelectorAll(".discoverPics");
     // const button = document.querySelectorAll(".gridListButtons");
     // const directH2 = document.querySelectorAll(".directory_card .lineUnder");
-    const listVerPink = document.querySelectorAll(".listVersion section:nth-child(odd)");
+    // const listVerPink = document.querySelectorAll(".listVersion section:nth-child(odd)");
+    // const li = document.querySelectorAll("ul");
+    // const label = document.querySelectorAll("#label")
+    const GoldH2 = document.getElementById("joinH2Gold");
+
 
 
     if (checkBox.checked){
@@ -59,6 +63,18 @@ function darkMode() {
         // listVerPink.forEach((p) => {
         //     p.style.backgroundColor = '#960d42';
         // })
+        // li.forEach((l) => {
+        //     l.style.color = "white";
+        // })
+        // label.forEach((lbl) => {
+        //     lbl.style.color = "white";
+        // })
+        // GoldH2.forEach((h) => {
+        //     h.style.color = "white"
+        // })
+
+        GoldH2.style.color = "white"
+
     }
     else if(checkBox.checked !== true){
         document.body.style.backgroundColor = "";

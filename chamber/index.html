@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="styles/larger.css">
     <script src="scripts/dates.js" defer></script>
     <script src="scripts/burger.js" defer></script>
-    <script src="scripts/darkmode.js" defer></script>
+    <script src="scripts/newDark.js" defer></script>
     <script src="scripts/weather.js" defer></script>
     <script src="scripts/meet-greet.js" defer></script>
     <title>Hamilton Chamber of Commerce</title>
@@ -73,29 +73,31 @@
             <h3><span id="nextTemp3"></span></h3>
         </section>
 
-        <section id="about">
-            <h2>About Us</h2>
-            <img id="hammyMapImg" src="images/map_of_hamilton.webp" alt="">
-            <p>The Hamilton Chamber of Commerce wants to help shape Hamilton into one of the best places to be. We have several businesses and amazing community members! We host several events and we want to put this small town on the map! </p>
-        </section>
+        <div class="flexy">
+        
+            <section class="spotlight-cards" id="spotlight">
+                <h2>Pasta Villa</h2>
+                <img id="pvimg" src="images/pv.webp" alt="PLaceholder">
+                <p>Yummy pasta!</p>
+                <P>email@email.com</P>
+                <p>111 111 1111</p>
+                <p>website</p>
+            </section>
 
-        <section class="spotlight-cards" id="spotlight">
-            <h2>Pasta Villa</h2>
-            <img id="pvimg" src="images/pv.webp" alt="PLaceholder">
-            <p>Yummy pasta!</p>
-            <P>email@email.com</P>
-            <p>111 111 1111</p>
-            <p>website</p>
-        </section>
+            <section id="about">
+                <h2>About Us</h2>
+                <img id="hammyMapImg" src="images/map_of_hamilton.webp" alt="">
+                <p>The Hamilton Chamber of Commerce wants to help shape Hamilton into one of the best places to be. We have several businesses and amazing community members! We host several events and we want to put this small town on the map! </p>
+            </section>
 
-        <section class="spotlight-cards" id="spotlight2">
-            <h2>Spotlight 2</h2>
-            <img id="libraryimg" src="images/libraryH.webp" alt="PLaceholder">
-            <p>Hamilton public library</p>
-            <p>Get books</p>
-            <p>website</p>
-        </section>
-
+            <section class="spotlight-cards" id="spotlight2">
+                <h2>Spotlight 2</h2>
+                <img id="libraryimg" src="images/libraryH.webp" alt="PLaceholder">
+                <p>Hamilton public library</p>
+                <p>Get books</p>
+                <p>website</p>
+            </section>
+        </div>
     </main>
     <footer>
         <img class="logo" src="images/hamiltonL.webp" alt="">

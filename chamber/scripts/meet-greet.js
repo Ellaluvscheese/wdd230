@@ -10,5 +10,5 @@ var x = document.getElementById("closeMeetAndGreet");
 
 x.addEventListener("click", function(){
     let meetGreet = document.getElementById("meetAndGreet");
-    meetGreet.innerHTML = "";
+    meetGreet.style.display = 'none';
 });

@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="styles/larger.css">
     <script src="scripts/dates.js" defer></script>
     <script src="scripts/burger.js" defer></script>
-    <script src="scripts/darkmode.js" defer></script>
+    <script src="scripts/newDark.js" defer></script>
     <script src="scripts/weather.js" defer></script>
     <script src="scripts/join.js" defer></script>
     <title>Hamilton Chamber of Commerce</title>
@@ -42,7 +42,9 @@
     </nav>
     <main class="gap formgrid">
         <form id="theform" action="thankyou.html">
-            <h1>Become a Member</h1>
+            <section class="centermemberships">
+                <h2>Become a Member</h2>
+            </section>
             <fieldset>
                 <label class="myinput">First Name: <input type="text" id="firstname" name="firstname" required></label>
                 <label class="myinput">Last Name: <input type="text" id="lastname" name="lastname" required></label>
@@ -50,28 +52,28 @@
                 <label class="myinput">Email: <input placeholder="youremail@gmail.com" type="email" id="email" name="email" required title="Please enter a valid email address"></label>
                 <label class="myinput">Phone Number: <input type="telephone" id="phone" name="phone" required></label>
                 <div id="radioslay">
-                    <h3>Membership:  </h3>
+                    <h3>Membership:</h3>
 
-                    <label class="plz"> <input type="radio" id="goldM" name="radio" value="gold"> Gold</label>
+                    <label class="plz"><input type="radio" id="goldM" name="radio" value="gold"> Gold</label>
                     <label class="plz"><input type="radio" id="silverM" name="radio" value="silver"> Silver</label>
                     <label class="plz"><input type="radio" id="bronzeM" name="radio" value="bronze"> Bronze</label>
                     <label class="plz"><input type="radio" id="nonprofit" name="radio" value="nonprofit"> Non Profit</label>
                 </div>
                 <label for="description">Description:</label>
-                <textarea placeholder="Tell us about your business/organization here!" name="description" id="description" cols="90" rows="10"></textarea><br>
+                <textarea placeholder="Tell us about your business/organization here!" name="description" id="description" cols="55" rows="5"></textarea><br>
                 <label><input type="hidden" name="timestamp" id="timestamp" value=""></input></label> 
                 
-               </label><button id="formButton" type="submit">Click To Join</button>
+               </label><button id="formButton" type="submit">Click To Join Us</button>
             </fieldset>
         </form>
         <section id="membershipLevels">
-            <section id="centermemberships">
-                <h1>Memberships:</h1>
+            <section class="centermemberships">
+                <h2>Memberships:</h2>
             </section>
             <section id="gold" class="card">
-                <h2>Gold</h2>
-                <h3>Benefits</h3>
-                <ul>
+                <h3 id="joinH2Gold">Gold</h3>
+                <h4>Benefits</h4>
+                <ul class="showDots">
                     <li>$10</li>
                     <li>Advertising</li>
                     <li>Special Events</li>
@@ -80,9 +82,9 @@
                 </ul>
             </section>
             <section id="silver" class="card">
-                <h2>Silver</h2>
-                <h3>Benefits</h3>
-                <ul>
+                <h3>Silver</h3>
+                <h4>Benefits</h4>
+                <ul class="showDots">
                     <li>$5</li>
                     <li>Training</li>
                     <li>Special Events</li>
@@ -90,18 +92,18 @@
                 </ul>
             </section>
             <section id="bronze" class="card">
-                <h2>Bronze</h2>
-                <h3>Benefits</h3>
-                <ul>
+                <h3>Bronze</h3>
+                <h4>Benefits</h4>
+                <ul class="showDots">
                     <li>$2</li>
                     <li>Special Events</li>
                     <li>Networking</li>
                 </ul>
             </section>
             <section id="NP" class="card">
-                <h2>Non Profit</h2>
-                <h3>Benefits</h3>
-                <ul>
+                <h3>Non Profit</h3>
+                <h4>Benefits</h4>
+                <ul class="showDots">
                     <li>Free</li>
                     <li>Special Events</li>
                 </ul>
