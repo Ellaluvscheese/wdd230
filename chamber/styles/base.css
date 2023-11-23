@@ -148,6 +148,18 @@ nav ul{
     border: 2px solid var(--black);
 }
 
+#current-events p{
+    padding: 1em;
+}
+
+.spotlightLinks{
+    color: white;
+    background-color: var(--secondary-color);
+    padding: .25em;
+    border: var(--black) solid 2px;
+    border-radius: 10px;
+}
+
 #weather{
     border-radius: 10px;
     border-top-right-radius: 0%;
