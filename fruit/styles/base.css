@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&family=Oswald:wght@300;500&family=Roboto+Condensed&family=Roboto+Flex:opsz@8..144&display=swap');
+
+main, a, li, h1{
+    font-family: "Oswald";
+}
+
+#heroSection{
+    background-color: #f6968c;
+}
