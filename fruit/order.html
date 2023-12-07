@@ -12,53 +12,44 @@
     <meta property="og:image"              content="https://ellaluvscheese.github.io/wdd230/images/ella-galbraith-small.jpg" />
     <link rel="icon" href="favicon.ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <title>Bountiful Foods - Home</title>
+    <title>Order Now - Bountiful Foods</title>
     <link rel="stylesheet" href="styles/base.css">
+
 </head>
 <body>
     <header>
-        <img src="images/bountifulFoodsLogo.png" alt="Bountiful Foods Logo">
+        <img src="images/logoBSreal.png" alt="Bountiful Foods Logo">
         <h1>Bountiful Foods</h1>
-        <!-- <div id="lightDarkStack">
-          <button id="lightdarkButton">hi</button>
-          <p id="lightDarkP">Dark Mode</p> 
-        </div> -->
     </header>
     <nav>
         <a href="index.html">Home</a>
         <a href="order.html">Order</a>
         <a href="about.html">About Us</a>
     </nav>
-    <main class="mainGrid homeGrid">
-        <section id="heroSection">
-            <img src="images/strawbsAndBluebsClear.png" alt="">
-            <img src="images/strawbsAndBluebsClear.png" alt="">
-            <img src="images/strawbsAndBluebsClearShort.png" alt="">
-            <button id="heroSectionButton">Buy A Smoothie</button>
-            <img src="images/strawbsAndBluebsClearShort.png" alt="">
-            <img src="images/strawbsAndBluebsClear.png" alt="">
-            <img src="images/strawbsAndBluebsClear.png" alt="">
+    <main>
+        <section>
+            <h2>Order</h2>
         </section>
-        <section id="townDescHome">
-            <h2 style="color: #da181e;">Santa Monica</h2>
-            <p>Enjoy a lovely and refreshing smoothie after a long day at the Santa Monica Beach? At the Santa Monica </p>
-        </section>
-        <section id="weatherSection">
-            <h2>Weather</h2>
-            <h3>Today <span id="todayDate"></span></h3>
-            <p id="todayWeather">?</p>
-            <h3>3 Day Forecast</h3>
-            <p id="nextWeather">?</p>
-            <p id="next2Weather">?</p>
-            <p id="next3Weather">?</p>
-        </section>
-        <section id="prevPurchSection">
-            <h2>Previous Purchases</h2>
-            <p id="prevPurchP">No previous purchases! Lets change that! <a href="order.html">Order Now</a></p>
-        </section>
-        <section id="buyNowSection">
-            <h2>Buy a Smoothie</h2>
-        </section>
+        <form id="theform" action="confirm.html">
+            <fieldset>
+                <legend>Order Form</legend>
+                <label class="inputs">Name: <input type="text" id="name" name="name" required></label>
+                <label class="inputs">Email: <input type="email" placeholder="yourEmail@gmail.com" id="email" name="email" required title="Please enter a valid email address"></label>
+                <label class="inputs">Phone Number: <input type="telephone" id="phone" name="phone" required></label>
+
+                <fieldset>
+                    <legend>Select 3 Fruits</legend>
+                    <div id="fuitsRadio"></div>
+                    <label for=""><input type="radio" name="" id="">strawberry</label>
+                </fieldset>
+                <label for="specialInstructions">Special Instructions:</label>
+                <textarea name="instructions" id="specialInstructions" cols="30" rows="10"></textarea> 
+
+                <p>⚠️Please Pay at Pickup Location⚠️</p>
+                <button type="submit">Click To Order</button>
+            </fieldset>
+
+        </form>
     </main>
     <footer>
         <div id="footerGrid">
