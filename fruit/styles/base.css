@@ -1,9 +1,52 @@
 @import url('https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&family=Oswald:wght@300;500&family=Roboto+Condensed&family=Roboto+Flex:opsz@8..144&display=swap');
 
+/* fonts */
 main, a, li, h1{
     font-family: "Oswald";
 }
 
+body{
+    text-align: center;
+    margin: 0 auto;
+}
+
+/* main */
+main{
+    max-width: 600px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+/* hero */
 #heroSection{
     background-color: #f6968c;
+}
+
+#heroSection img{
+    width: 45%;
+}
+
+#heroSection .imgHeroShort{
+    width: 30%;
+}
+
+/* header n nav */
+
+header{
+    background-color: #da181e;
+    display: flex;
+}
+
+#headerTitle{
+    margin: auto;
+}
+
+nav{
+    background-color: #6caf50;
+}
+
+/* footer */
+footer{
+    background-color: #da181e;
+    border-top: #6caf50 15px solid;
 }
