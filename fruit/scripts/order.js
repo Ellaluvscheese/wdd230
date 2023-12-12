@@ -1,6 +1,13 @@
 const fruitDiv = document.querySelector(".divChecks");
 const url = './data/fruit.json';
-const submitButton = document.getElementById("submitButton")
+const submitButton = document.getElementById("submitButton");
+const dateINP = document.getElementById('THEDATE');
+const formDate = new Date();
+const hidden = document.getElementById('THEDATE');
+hidden.value = formDate.toISOString().split('T')[0];
+
+
+
 
 function displayFruit(data) {
     data.forEach(f => {

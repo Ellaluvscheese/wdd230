@@ -15,6 +15,7 @@
     <title>Order Confirmation - Bountiful Foods</title>
     <link rel="stylesheet" href="styles/base.css">
     <script src="scripts/general.js" defer></script>
+    <script src="scripts/confirm.js" defer></script>
 </head>
 <body>
     <header>
@@ -35,7 +36,7 @@
     <main>
         <section class="chunk thankyou">
             <h2>THANK YOU <span class="usersName"></span></h2>
-            <p>Thank you so much for your order! We are working on your order. It should take around 10 minutes to complete your drink. Your Confirmation number is <span class="orderNum">#000000</span> Contact Us if you have any questions!</p>
+            <p>Thank you so much for your order! We are working on your order. It should take around 10 minutes to complete your drink. Contact us if you have any questions!</p>
             <h4>LEAVE US A REVIEW ON SOCIAL MEDIA</h4>
             <section id="socials">
                 <img src="" alt="">
@@ -48,16 +49,17 @@
         </section>
         <section class="chunk thankyou" id="orderComf">
             <h2>Your Order:</h2>
-            <p>Name: <span class="usersName"></span></p>
-            <p>Email: <span class="usersEmail"></span></p>
-            <p>Phone Number <span class="usersPhone"></span></p>
-            <p>Special Instructions: <span class="specialInstructions">None</span></p>
-            <p>Date: <span class="orderDate"></span></p>
-            <h4>Smoothie</h4>
-            <ul>
-                <li id="fruit1"></li>
-                <li id="fruit2"></li>
-                <li id="fruit3"></li>
+            <p>Name: <span id="usersName"></span></p>
+            <p>Email: <span id="usersEmail"></span></p>
+            <p>Phone Number: <span id="usersPhone"></span></p>
+            <p>Special Instructions: <span id="specialInstructions"></span></p>
+            <p>Date: <span id="orderDate"></span></p>
+            <h4>Your Smoothie:</h4>
+            <ul id="containerOFruit">
+            </ul>
+            <h4>Nutritional Info:</h4>
+            <ul id="nutritionCon">
+
             </ul>
             <p>Total: $8.47</p>
         </section>
