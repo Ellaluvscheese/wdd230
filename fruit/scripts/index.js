@@ -87,4 +87,25 @@ async function getWeatherData(){
     }
 };
 
+function previousPurch(){
+    let message = "No previous purchases! Let's change that!";
+    let prevPurchs = localStorage.getItem('purchaseNum');
+
+    prevPurchs = parseInt(prevPurchs) || 0; // Convert to number, default to 0 if NaN
+
+    if (prevPurchs === 1){
+        message = `You have ordered 1 smoothie from us! Let's add one more!`;
+    }
+    else {
+        if (prevPurchs > 1){
+            message = `You have ordered ${prevPurchs} smoothies from us! Let's add one more!`;
+        }
+    }
+    return message;
+}
+
+const prev = document.getElementById("prevPurchP");
+prev.innerHTML = previousPurch();
+
+
 getWeatherData();

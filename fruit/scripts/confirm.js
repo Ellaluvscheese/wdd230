@@ -31,6 +31,10 @@ mail.innerHTML = uMail;
 phone.innerHTML = uPhone;
 date.innerHTML = uDate
 
+let purch = localStorage.getItem('purchaseNum');
+purch = parseInt(purch) || 0; // Convert to number, default to 0 if NaN
+purch += 1;
+localStorage.setItem('purchaseNum', purch);
 
 
 // Loop through each value and create a list item
