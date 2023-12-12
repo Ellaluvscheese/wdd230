@@ -14,64 +14,86 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <title>Bountiful Foods - Home</title>
     <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/general.js" defer></script>
+    <script src="scripts/index.js" defer></script>
 </head>
 <body>
     <header>
-        <img src="images/logoBS.png" alt="Bountiful Foods Logo">
+        <div id="menuSizeAndColor">
+           <button id="hamburgerButton">≡</button>
+        </div>
+      
+        <img id="logoPic" src="images/cup200.png" alt="Bountiful Foods Logo">
         <h1 id="headerTitle">Bountiful Foods</h1>
-        <!-- <div id="lightDarkStack">
-          <button id="lightdarkButton">hi</button>
-          <p id="lightDarkP">Dark Mode</p> 
-        </div> -->
     </header>
-    <a href="#"></a>
     <nav>
-        <a href="index.html">Home</a>
-        <a href="order.html">Order</a>
-        <a href="about.html">About Us</a>
-    </nav>
+        <div id="navDiv">
+            <a class="active" href="index.html">Home</a>
+            <a href="order.html">Order</a>
+            <a href="about.html">About Us</a> 
+        </div>
+    </nav>  
     <main class="mainGrid homeGrid">
         <section id="heroSection">
             <img src="images/strawbsAndBluebsClear.png" alt="">
             <img src="images/strawbsAndBluebsClear.png" alt="">
             <img class="imgHeroShort" src="images/strawbsAndBluebsClearShort.png" alt="">
-            <button id="heroSectionButton">Buy A Smoothie</button>
+            <button id="heroSectionButton">BUY A SMOOTHIE</button>
             <img class="imgHeroShort" src="images/strawbsAndBluebsClearShort.png" alt="">
             <img src="images/strawbsAndBluebsClear.png" alt="">
             <img src="images/strawbsAndBluebsClear.png" alt="">
         </section>
         <section id="townDescHome">
-            <h2 style="color: #da181e;">Santa Monica</h2>
-            <p>Enjoy a lovely and refreshing smoothie after a long day at the Santa Monica Beach? At the Santa Monica </p>
+            <h2>Santa Monica</h2>
+            <p class="chunk">Enjoy a lovely and refreshing smoothie after a long day at the Santa Monica Beach? At the Santa Monica </p>
         </section>
         <section id="prevPurchSection">
             <h2>Previous Purchases</h2>
-            <p id="prevPurchP">No previous purchases! Lets change that! <a href="order.html">Order Now</a></p>
+            <section class="chunk">
+                <p  id="prevPurchP">No previous purchases! Lets change that!</p>
+                <button>ORDER NOW</button>                
+            </section>
+
         </section>
         <section id="weatherSection">
             <h2>Weather</h2>
-            <h3>Today <span id="todayDate"></span></h3>
-            <p id="todayWeather">?</p>
-            <h3>3 Day Forecast</h3>
-            <p id="nextWeather">?</p>
-            <p id="next2Weather">?</p>
-            <p id="next3Weather">?</p>
+            <section class="chunk">
+                <h3>Today: <span id="todayDate"></span></h3>
+                <div id="todayWeatherDiv">
+                    <img id="todayICON" src="" alt="">
+                    <p id="todayDESC"></p>
+                    <p id="TEMP"></p>
+                    <p id="HUMID"></p>
+                </div>
+                <h3>3 Day Forecast</h3>
+                <div id="weatherDiv">
+                    <img id="nextWeatherIcon" src="" alt="">
+                    <p id="nextWeather"></p>
+                    <img id="next2Icon" src="" alt="">
+                    <p id="next2Weather">?</p>
+                    <img id="next3Icon" src="" alt="">
+                    <p id="next3Weather">?</p>
+                </div>
+                
+            </section>
         </section>
         <section id="buyNowSection">
-            <button>Buy a Smoothie</button>
+            <button>BUY A SMOOTHIE</button>
         </section>
     </main>
+    <section id="funColorDiv">
+    </section>
     <footer>
         <div id="footerGrid">
             <div id="topOFoot">
-                <section>
+                <section id="ContactSection">
                     <ul>
                         <li>CONTACT</li>
                         <li>EMAIL: bountifulFoods@gmail.com</li>
                         <li>PHONE NUMBER: (818) 434-6671</li>
                     </ul>
                 </section>
-                <section>
+                <section id="socialMediaSection">
                     <ul>
                         <li>FOLLOW US</li>
                         <li><img src="#" alt="instagram">INSTAGRAM</li>
@@ -79,7 +101,7 @@
                         <li><img src="#" alt="facebook">FACEBOOK</li>
                     </ul>
                 </section>
-                <section>
+                <section id="resourcesSection">
                     <ul>
                         <li>RESOURCES:</li>
                         <li><a href="https://pngtree.com/so/cute-strawberry-clipart">Strawberry Clip Art</a></li>
@@ -87,7 +109,7 @@
                 </section>
             </div>
             <div id="bottomOFoot">
-                <p id="lastModified">hi </p>
+                <p>Last Modified: <span id="lastModified"></span> </p>
             </div>
         </div>
     </footer>

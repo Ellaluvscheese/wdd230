@@ -3,24 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Ella Galbraith">
+    <meta name="description" content="Ella Galbraith's course assignment in making my own chamber of Commerce">
+    <meta property="og:url"                content="https://ellaluvscheese.github.io/wdd230/fruit" />
+    <meta property="og:type"               content="website" />
+    <meta property="og:title"              content="Bountiful Foods Homepage" />
+    <meta property="og:description"        content="Ella Galbraith's final for the class WDD 230 - Web frontend Development." />
+    <meta property="og:image"              content="https://ellaluvscheese.github.io/wdd230/images/ella-galbraith-small.jpg" />
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <title>Order Confirmation - Bountiful Foods</title>
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/general.js" defer></script>
 </head>
 <body>
     <header>
-        <img src="images/bountifulFoodsLogo.png" alt="Bountiful Foods Logo">
-        <h1>Bountiful Foods</h1>
+        <div id="menuSizeAndColor">
+           <button id="hamburgerButton">≡</button>
+        </div>
+      
+        <img id="logoPic" src="images/cup200.png" alt="Bountiful Foods Logo">
+        <h1 id="headerTitle">Bountiful Foods</h1>
     </header>
     <nav>
-        <a href="index.html">Home</a>
-        <a href="order.html">Order</a>
-        <a href="about.html">About Us</a>
+        <div id="navDiv">
+            <a href="index.html">Home</a>
+            <a href="order.html">Order</a>
+            <a href="about.html">About Us</a> 
+        </div>
     </nav>
     <main>
-        <section>
+        <section class="chunk thankyou">
             <h2>THANK YOU <span class="usersName"></span></h2>
-            <p>Thank you so much for your order! We are working on your order. It should take around 15 minutes to complete your drink. Your Confirmation number is <span class="orderNum">#000000</span> Contact Us if you have any questions!</p>
+            <p>Thank you so much for your order! We are working on your order. It should take around 10 minutes to complete your drink. Your Confirmation number is <span class="orderNum">#000000</span> Contact Us if you have any questions!</p>
             <h4>LEAVE US A REVIEW ON SOCIAL MEDIA</h4>
-            <section>
+            <section id="socials">
                 <img src="" alt="">
                 <p>Instagram</p>
                 <img src="" alt="">
@@ -29,8 +46,8 @@
                 <p>Facebook</p>
             </section>
         </section>
-        <section>
-            <h3>Your Order:</h3>
+        <section class="chunk thankyou" id="orderComf">
+            <h2>Your Order:</h2>
             <p>Name: <span class="usersName"></span></p>
             <p>Email: <span class="usersEmail"></span></p>
             <p>Phone Number <span class="usersPhone"></span></p>
@@ -44,47 +61,49 @@
             </ul>
             <p>Total: $8.47</p>
         </section>
-        <section>
+        <section class="chunk thankyou">
             <h2>LEAVE A REVIEW</h2>
             <h5>WE WANT YOUR OPINION!</h5>
             <button>Review</button>
         </section>
-        <section>
+        <section class="chunk thankyou">
             <h2>QUESTIONS?</h2>
             <p>EMAIL OR CALL US</p>
             <p>bountifulFoods@gmail.com</p>
             <p>111 111 1111</p>
         </section>
-        <footer>
-            <div id="footerGrid">
-                <div id="topOFoot">
-                    <section>
-                        <ul>
-                            <li><a href="contact.html">CONTACT</a></li>
-                            <li>EMAIL: bountifulFoods@gmail.com</li>
-                            <li>PHONE NUMBER: (818) 434-6671</li>
-                        </ul>
-                    </section>
-                    <section>
-                        <ul>
-                            <li>FOLLOW US</li>
-                            <li><img src="#" alt="instagram">INSTAGRAM</li>
-                            <li><img src="#" alt="twitter">TWITTER</li>
-                            <li><img src="#" alt="facebook">FACEBOOK</li>
-                        </ul>
-                    </section>
-                    <section>
-                        <ul>
-                            <li>RESOURCES</li>
-                            <li><a href="https://pngtree.com/so/cute-strawberry-clipart">Strawberry Clip Art</a></li>
-                        </ul>
-                    </section>
-                </div>
-                <div id="bottomOFoot">
-                    <p id="lastModified">hi </p>
-                </div>
-            </div>
-        </footer>
     </main>
+    <section id="funColorDiv">
+    </section>
+    <footer>
+        <div id="footerGrid">
+            <div id="topOFoot">
+                <section id="ContactSection">
+                    <ul>
+                        <li>CONTACT</li>
+                        <li>EMAIL: bountifulFoods@gmail.com</li>
+                        <li>PHONE NUMBER: (818) 434-6671</li>
+                    </ul>
+                </section>
+                <section id="socialMediaSection">
+                    <ul>
+                        <li>FOLLOW US</li>
+                        <li><img src="#" alt="instagram">INSTAGRAM</li>
+                        <li><img src="#" alt="twitter">TWITTER</li>
+                        <li><img src="#" alt="facebook">FACEBOOK</li>
+                    </ul>
+                </section>
+                <section id="resourcesSection">
+                    <ul>
+                        <li>RESOURCES:</li>
+                        <li><a href="https://pngtree.com/so/cute-strawberry-clipart">Strawberry Clip Art</a></li>
+                    </ul>
+                </section>
+            </div>
+            <div id="bottomOFoot">
+                <p>Last Modified: <span id="lastModified"></span> </p>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

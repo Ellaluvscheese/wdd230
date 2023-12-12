@@ -1,8 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&family=Oswald:wght@300;500&family=Roboto+Condensed&family=Roboto+Flex:opsz@8..144&display=swap');
 
 /* fonts */
-main, a, li, h1{
+main, a, li, h1, button, footer p{
     font-family: "Oswald";
+}
+
+h2{
+    color: black;
+    background-color: #6678d9;
+    max-width: 200px;
+    margin: 12px auto;
+    padding: 1rem;
+    border: black 3px solid;
+}
+
+h3{
+    padding: .5rem;
+    max-width: 110px;
+    margin:  0 auto;
+    border: black 3px solid;
+}
+
+button{
+    background-color: #6caf50;
+    padding: .5rem;
+    border-radius: .25rem;
+    margin-bottom: .5rem;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
 }
 
 body{
@@ -16,12 +40,12 @@ main{
     max-width: 600px;
     text-align: center;
     margin: 0 auto;
-    border-bottom: #6caf50 20px solid;
 }
 
 /* hero */
 #heroSection{
     background-color: #f6968c;
+    border-top: white 15px solid;
 }
 
 #heroSection img{
@@ -32,33 +56,22 @@ main{
     width: 30%;
 }
 
-/* header n nav */
+/* header */
 
 header{
-    background-color: #da181e;
+    background-color: #6678d9;
     display: flex;
     max-width: 600px;
     margin: 0 auto;
-    border-bottom: white 15px solid;
+}
+
+#logoPic{
+    max-width: 100px;
+    padding: 1em;
+    margin: 0 auto;
 }
 
 #headerTitle{
-    margin: auto;
-    color: white;
-}
-
-nav{
-    background-color: #6caf50;
-    padding: 1rem 0 1rem 0;
-    max-width: 600px;
-    margin: 0 auto;
-    border-bottom: white solid 15px;
-    display: flex;
-}
-
-nav a {
-    color: black;
-    text-decoration: none;
     margin: auto;
 }
 
@@ -69,17 +82,181 @@ footer{
     max-width: 600px;
     margin: 0 auto;
 }
+footer ul{
+    display: inline-block;
+    padding: 0;
+}
+
+#topOFoot{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+#funColorDiv{
+    background-color: #6caf50;
+    max-width: 600px;
+    border-top: #345925 solid 15px;
+    margin: 0 auto;
+    height: 40px;
+}
+
 
 ul li{
     color: white;
     list-style: none;
+    padding: .25rem 0 .25rem ;
+}
+
+footer a, footer p {
+    color: white;
+    padding: .2rem;
+}
+
+/* santa monica description card */
+.chunk{
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 1rem;
+    border: black 3px solid;
+}
+
+#buyNowSection button{
+    margin: 1rem;
+}
+
+#lastModified{
+    color: white;
+}
+
+/* hamburger n nav */
+.active{
+    background-color: #f6968c;
+    font-weight: bold;
+}
+
+nav{
+    margin: 0 auto;
+    max-width: 600px;
+    background-color: #6678d9;
+} 
+
+
+nav a {
+    color: black;
+    text-decoration: none;
+    padding: .75rem;
+    display: none;
+    text-align: left;
+}
+
+
+nav a:hover{
+    background-color: #f6968c;
+}
+
+#hamburgerButton{
+    border: none;
+    box-shadow: none;
+    font-size: 40px;
+    font-weight: bolder;
+    margin: 0;
+    background-color: #6678d9;
+    padding: 1rem;
+}
+
+#prevPurchSection a{
+    color: black;
+
+}
+
+.aboutPics{
+    padding: 1rem;
+}
+
+.aboutDivs .chunk{
+    margin: 1rem auto;
+}
+
+#orderH2{
+    background-color: #f6968c;
+}
+
+/* form */
+
+#theform{
+    max-width: 400px;
+    margin: 1rem auto;
+}
+
+#formBorder{
+    border: black solid 2px;
+}
+
+fieldset{
+    margin: 1rem auto;
+    text-align: left;
+}
+
+legend{
+    font-weight: bold;
+    background-color: #f6968c;
+    padding: .5rem;
+    border: black 2px solid;
+}
+
+input{
+    display: block;
+    padding: .5rem;
+    font-size: 1.1rem;
+    width: 50%;
+}
+
+input[type="radio"]{
+    width: auto;
+    padding: .5em;
+}
+
+label{
+    display: block;
+    margin: .5rem 0;
+}
+
+
+#fruitsRadio{
+    display: flex;
+    flex-direction: column;
+}
+
+.radioLabel{
+    display: flex;
+    margin-right: 50%;
+}
+
+.deezNuts{
+    max-width: 50px;
+}
+
+/* thankyou */
+.thankyou{
+    margin: 1rem auto;
+}
+
+.thankyou h2{
+    background-color: #f6968c;
+}
+
+#socials{
+    display: flex;
+}
+
+#socials img, #socials p{
     padding: .25rem;
 }
 
-footer a {
-    color: white;
-    text-decoration: none;
-    background-color: black;
-    border-radius: .25rem;
-    padding: .2rem;
+#orderComf{
+    text-align: left;
+}
+
+#orderComf h2, #orderComf ul{
+    text-align: center;
 }

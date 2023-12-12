@@ -14,33 +14,42 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <title>Order Now - Bountiful Foods</title>
     <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/general.js" defer></script>
+    <script src="scripts/order.js" defer></script>
 
 </head>
 <body>
     <header>
-        <img src="images/logoBSreal.png" alt="Bountiful Foods Logo">
-        <h1>Bountiful Foods</h1>
+        <div id="menuSizeAndColor">
+           <button id="hamburgerButton">≡</button>
+        </div>
+      
+        <img id="logoPic" src="images/cup200.png" alt="Bountiful Foods Logo">
+        <h1 id="headerTitle">Bountiful Foods</h1>
     </header>
     <nav>
-        <a href="index.html">Home</a>
-        <a href="order.html">Order</a>
-        <a href="about.html">About Us</a>
-    </nav>
+        <div id="navDiv">
+            <a href="index.html">Home</a>
+            <a class="active" href="order.html">Order</a>
+            <a href="about.html">About Us</a> 
+        </div>
+    </nav> 
+    <main>
     <main>
         <section>
-            <h2>Order</h2>
+            <h2 id="orderH2">Order</h2>
         </section>
         <form id="theform" action="confirm.html">
-            <fieldset>
-                <legend>Order Form</legend>
+            <fieldset id="formBorder">
                 <label class="inputs">Name: <input type="text" id="name" name="name" required></label>
                 <label class="inputs">Email: <input type="email" placeholder="yourEmail@gmail.com" id="email" name="email" required title="Please enter a valid email address"></label>
                 <label class="inputs">Phone Number: <input type="telephone" id="phone" name="phone" required></label>
 
                 <fieldset>
                     <legend>Select 3 Fruits</legend>
-                    <div id="fuitsRadio"></div>
-                    <label for=""><input type="radio" name="" id="">strawberry</label>
+                    <div class="divChecks" id="fuitsRadio">
+                        
+                    </div> 
                 </fieldset>
                 <label for="specialInstructions">Special Instructions:</label>
                 <textarea name="instructions" id="specialInstructions" cols="30" rows="10"></textarea> 
@@ -51,17 +60,19 @@
 
         </form>
     </main>
+    <section id="funColorDiv">
+    </section>
     <footer>
         <div id="footerGrid">
             <div id="topOFoot">
-                <section>
+                <section id="ContactSection">
                     <ul>
-                        <li><a href="contact.html">CONTACT</a></li>
+                        <li>CONTACT</li>
                         <li>EMAIL: bountifulFoods@gmail.com</li>
                         <li>PHONE NUMBER: (818) 434-6671</li>
                     </ul>
                 </section>
-                <section>
+                <section id="socialMediaSection">
                     <ul>
                         <li>FOLLOW US</li>
                         <li><img src="#" alt="instagram">INSTAGRAM</li>
@@ -69,15 +80,15 @@
                         <li><img src="#" alt="facebook">FACEBOOK</li>
                     </ul>
                 </section>
-                <section>
+                <section id="resourcesSection">
                     <ul>
-                        <li>RESOURCES</li>
+                        <li>RESOURCES:</li>
                         <li><a href="https://pngtree.com/so/cute-strawberry-clipart">Strawberry Clip Art</a></li>
                     </ul>
                 </section>
             </div>
             <div id="bottomOFoot">
-                <p id="lastModified">hi </p>
+                <p>Last Modified: <span id="lastModified"></span> </p>
             </div>
         </div>
     </footer>
