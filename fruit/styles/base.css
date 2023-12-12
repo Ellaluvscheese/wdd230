@@ -221,6 +221,9 @@ label{
     margin: .5rem 0;
 }
 
+input:invalid {
+  border: 2px solid red;
+}
 
 #fruitsRadio{
     display: flex;
@@ -260,3 +263,4 @@ label{
 #orderComf h2, #orderComf ul{
     text-align: center;
 }
+

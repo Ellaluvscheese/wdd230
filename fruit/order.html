@@ -35,7 +35,6 @@
         </div>
     </nav> 
     <main>
-    <main>
         <section>
             <h2 id="orderH2">Order</h2>
         </section>
@@ -45,9 +44,9 @@
                 <label class="inputs">Email: <input type="email" placeholder="yourEmail@gmail.com" id="email" name="email" required title="Please enter a valid email address"></label>
                 <label class="inputs">Phone Number: <input type="telephone" id="phone" name="phone" required></label>
 
-                <fieldset>
+                <fieldset id="fruitsField">
                     <legend>Select 3 Fruits</legend>
-                    <div class="divChecks" id="fuitsRadio">
+                    <div class="divChecks" id="fruitsRadio">
                         
                     </div> 
                 </fieldset>
@@ -55,7 +54,7 @@
                 <textarea name="instructions" id="specialInstructions" cols="30" rows="10"></textarea> 
 
                 <p>⚠️Please Pay at Pickup Location⚠️</p>
-                <button type="submit">Click To Order</button>
+                <button id="submitButton" type="submit">Click To Order</button>
             </fieldset>
 
         </form>
