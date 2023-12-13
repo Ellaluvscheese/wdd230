@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <title>About Us - Bountiful Foods</title>
     <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/large.css">
     <script src="scripts/general.js" defer></script>
 </head>
 <body>
@@ -22,7 +23,7 @@
            <button id="hamburgerButton">≡</button>
         </div>
       
-        <img id="logoPic" src="images/cup200.png" alt="Bountiful Foods Logo">
+        <img id="logoPic" src="images/cup200.png" alt="Bountiful Foods Logo" loading="lazy">
         <h1 id="headerTitle">Bountiful Foods</h1>
     </header>
     <nav>
@@ -34,29 +35,24 @@
     </nav> 
     <main>
         <section id="heroSection">
-            <img src="images/strawbsAndBluebsClear.png" alt="">
-            <img src="images/strawbsAndBluebsClear.png" alt="">
-            <img class="imgHeroShort" src="images/strawbsAndBluebsClearShort.png" alt="">
-            <button id="heroSectionButton" class="buySmoothieButton">BUY A SMOOTHIE</button>
-            <img class="imgHeroShort" src="images/strawbsAndBluebsClearShort.png" alt="">
-            <img src="images/strawbsAndBluebsClear.png" alt="">
-            <img src="images/strawbsAndBluebsClear.png" alt="">
+            <img src="images/pile-raspberries-with-hole-middle_996379-3822.jpg" alt="close up photo of raspberries" loading="lazy">
+            <button class="buySmoothieButton heroSectionButton">BUY A SMOOTHIE</button>
         </section>
-        <section>
+        <section id="aboutGrid">
             <h2>About Us</h2>
-            <div class="aboutDivs">
-                <img class="aboutPics" src="https://placehold.co/400x200" alt="">
-                <p class="chunk">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, reprehenderit, quas, adipisci veritatis assumenda explicabo laborum voluptas voluptate excepturi neque amet quo quidem id doloremque.</p> 
+            <div id="treeA" class="aboutDivs">
+                <img class="aboutPics" src="images/fruitTrees.jpg" alt="fruit farm picture" loading="lazy">
+                <p class="chunk">We get all of our fruits from fruit farms that avoid pesticides and produce all organic fruits! It makes our smoothies packed with true fruit flavor! Ask our employees at the pickup location how they feel about organic fruit, here at bountiful foods we ALL rave about organic fruit.</p> 
             </div>
-            <div class="aboutDivs">
-                <img class="aboutPics" src="https://placehold.co/400x200" alt="">
-                <p class="chunk">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse ex voluptate quasi? Perspiciatis similique sapiente iure. Quaerat odio enim ullam ipsa dignissimos sed, labore obcaecati! Doloremque ea laudantium cumque sint?</p>
+            <div id="cupA" class="aboutDivs">
+                <img class="aboutPics" src="images/cupByOcean.jpg" alt="picture of smoothie by ocean" loading="lazy">
+                <p class="chunk">Have you ever had a freshly made fruit smoothie by the ocean? If you have not, then you are in for a treat! Our smoothies taste the best when they see the sunshine! Take a picture if your smoothie by the beach, and we will give you a discount at pickup! We love and appreciate all of our customers, so we will listen to every bit of feedback that you have!</p>
             </div>
         </section>
-        <section>
+        <section id="googleMapSect">
             <h2>Google Map</h2>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52909.72930765913!2d-118.52195510002588!3d34.021853630833334!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2a4cec2910019%3A0xb4170ab5ff23f5ab!2sSanta%20Monica%2C%20CA!5e0!3m2!1sen!2sus!4v1701890042467!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            <p>Our Address: <a href="https://www.google.com/maps/place/Santa+Monica,+CA/@34.0218536,-118.5219551,13z/data=!3m1!4b1!4m6!3m5!1s0x80c2a4cec2910019:0xb4170ab5ff23f5ab!8m2!3d34.0194543!4d-118.4911912!16zL20vMDZfa2g?entry=ttu">Santa Monica</a></p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d106928.89382639121!2d-117.37020317998797!3d33.1214924337277!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dc73453f3bee59%3A0xa4cb5592fcf65d2f!2sCarlsbad%2C%20CA!5e0!3m2!1sen!2sus!4v1702423440455!5m2!1sen!2sus" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <p>Our Address: <a id="blueLink" href="https://www.google.com/maps/place/Carlsbad,+CA/@33.1214924,-117.3702032,12z/data=!3m1!4b1!4m6!3m5!1s0x80dc73453f3bee59:0xa4cb5592fcf65d2f!8m2!3d33.1580933!4d-117.3505939!16zL20vMHI0d24?entry=ttu">Carlsbad, CA</a></p>
         </section>
     </main>
     <section id="funColorDiv">
@@ -74,9 +70,9 @@
                 <section id="socialMediaSection">
                     <ul>
                         <li>FOLLOW US</li>
-                        <li><img src="#" alt="instagram">INSTAGRAM</li>
-                        <li><img src="#" alt="twitter">TWITTER</li>
-                        <li><img src="#" alt="facebook">FACEBOOK</li>
+                        <li><img src="images/instagram.jpg" alt="instagram" loading="lazy">INSTAGRAM</li>
+                        <li><img src="images/twitter.png" alt="twitter" loading="lazy">TWITTER</li>
+                        <li><img src="images/facebook.png" alt="facebook" loading="lazy">FACEBOOK</li>
                     </ul>
                 </section>
                 <section id="resourcesSection">

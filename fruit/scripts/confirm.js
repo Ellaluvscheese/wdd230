@@ -10,6 +10,7 @@ const mail = document.getElementById("usersEmail");
 const phone = document.getElementById("usersPhone");
 const special = document.getElementById("specialInstructions");
 const date = document.getElementById("orderDate");
+const estimated = document.getElementById("estimatedTime");
 
 const uPhone = params.get('phone');
 const uMail = params.get('email');
@@ -35,6 +36,7 @@ let purch = localStorage.getItem('purchaseNum');
 purch = parseInt(purch) || 0; // Convert to number, default to 0 if NaN
 purch += 1;
 localStorage.setItem('purchaseNum', purch);
+
 
 
 // Loop through each value and create a list item
@@ -93,5 +95,33 @@ async function getFruitData() {
         console.error("NO WORK");
     }
 }
+
+function getCurrentTimePlus10Minutes() {
+    const currentDate = new Date();
+  
+    // Add 10 minutes to the current time
+    currentDate.setMinutes(currentDate.getMinutes() + 10);
+  
+    // Get the hour and minutes
+    let hour = currentDate.getHours();
+    const minutes = currentDate.getMinutes();
+  
+    // Determine AM/PM
+    const amOrPm = hour >= 12 ? 'PM' : 'AM';
+  
+    // Convert to 12-hour format
+    hour = hour % 12 || 12;
+  
+    // Format the result as "h:mm AM/PM"
+    const formattedTime = `${hour.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')} ${amOrPm}`;
+  
+    return formattedTime;
+  }
+  
+  // Example usage:
+  const result = getCurrentTimePlus10Minutes();
+  estimated.innerHTML = `Estimated Time For Pickup: ${result}`
+  console.log(result);
+  
 
 getFruitData();
